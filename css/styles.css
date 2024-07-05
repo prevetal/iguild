@@ -227,106 +227,6 @@ button
 
 
 
-/*------------
-    Header
-------------*/
-header
-{
-    position: sticky;
-    z-index: 9;
-    top: 0;
-
-    margin-bottom: 24px;
-
-    background: rgb(25,27,34);
-}
-
-
-header .cont
-{
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-
-    min-height: 50px;
-}
-
-
-
-header .logo
-{
-    display: block;
-
-    text-decoration: none;
-
-    color: currentColor;
-}
-
-
-header .logo img
-{
-    display: block;
-
-    height: 44px;
-}
-
-
-
-header .account
-{
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
-    margin-left: auto;
-}
-
-
-header .account > * + *
-{
-    margin-left: 20px;
-}
-
-
-header .account .btn
-{
-    display: block;
-
-    transition: .2s linear;
-    text-decoration: none;
-
-    color: #fff;
-}
-
-
-header .account .btn:hover
-{
-    color: rgba(255,255,255,.8);
-}
-
-
-header .account .register_btn
-{
-    padding: 9px 20px;
-
-    border-radius: 100px;
-    background: rgb(0, 203, 132);
-}
-
-
-header .account .register_btn:hover
-{
-    background: rgba(0, 203, 132,.9);
-}
-
-
-
 /*----------------
     Block head
 ----------------*/
@@ -409,6 +309,12 @@ header .account .register_btn:hover
 /*-------------------
     First section
 -------------------*/
+.first_section
+{
+    padding-top: 40px;
+}
+
+
 .first_section .title
 {
     font-size: 24px;
@@ -438,9 +344,9 @@ header .account .register_btn:hover
 
 
 
-/*-----------------
-    Top bonuses
------------------*/
+/*-------------
+    Welcome
+-------------*/
 .welcome .block_head
 {
     padding-top: 20px;
@@ -861,7 +767,7 @@ header .account .register_btn:hover
 
 .top_bonuses .item + .item
 {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
@@ -904,49 +810,14 @@ header .account .register_btn:hover
     position: relative;
     z-index: 3;
 
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
     width: 100%;
-}
-
-
-.top_bonuses .item .icon
-{
-    overflow: hidden;
-
-    width: 66px;
-    height: 66px;
-
-    border: 3px solid #fff;
-    border-radius: 50%;
-}
-
-
-.top_bonuses .item .icon img
-{
-    display: block;
-
-    width: 100%;
-    height: 100%;
-}
-
-
-.top_bonuses .item .icon + *
-{
-    width: calc(100% - 81px);
-    margin-left: auto;
 }
 
 
 .top_bonuses .item .name
 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 20px;
 
     color: #fff;
 }
